@@ -51,7 +51,6 @@ def mod(a1,a2):
     e.g., mod(5,3) = 2, mod(15,5) = 0, mod(15,4) = 3
     '''
     toReturn = 0
-
     # add your code here
     return toReturn
 
@@ -79,7 +78,7 @@ def whichType(t):
     Returns the python data type of t
     '''
     toReturn = ''
-    toReturn = 
+    toReturn = type(t)
     # add your code here
     return toReturn
 
