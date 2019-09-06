@@ -51,6 +51,7 @@ def mod(a1,a2):
     e.g., mod(5,3) = 2, mod(15,5) = 0, mod(15,4) = 3
     '''
     toReturn = 0
+    toReturn = a1%a2
     # add your code here
     return toReturn
 
@@ -69,7 +70,7 @@ def orderOperations(a1,a2,a3):
     i.e., changes normal order or operations 
     '''
     toReturn = 0
-    toReturn (a1 + a2) * 3
+    toReturn = (a1 + a2) * a3
     # add your code here
     return toReturn
 
@@ -87,6 +88,7 @@ def convertInt(i):
     Converts i to an integer
     '''
     toReturn = 0
+    toReturn = int(i)
     # add your code here
     return toReturn
 
@@ -95,6 +97,7 @@ def convertFloat(f):
     Converts f to a float
     '''
     toReturn = 0.0
+    toReturn = float(f)
     # add your code here
     return toReturn
 
@@ -103,6 +106,7 @@ def convertStr(s):
     Converts s to a string
     '''
     toReturn = ''
+    toReturn = str(s)
     # add your code here
     return toReturn
 
@@ -111,6 +115,7 @@ def concat(s1,s2):
     Concatenates (string) s2 to the end of s1
     '''
     toReturn = ''
+    toReturn = s1+s2
     # add your code here
     return toReturn
 
@@ -119,6 +124,7 @@ def whichChar(s,a):
     Returns the character at position a of string s
     '''
     toReturn = ''
+    toReturn = s[a]
     # add your code here
     return toReturn
 
@@ -127,6 +133,7 @@ def substr(s,a1,a2):
     Returns a substring of s (from position a1 to a2)
     '''
     toReturn = ''
+    toReturn = s[a1:a2]
     # add your code here
     return toReturn
 
@@ -135,6 +142,7 @@ def reverseStr(s):
     Returns a string which is a reversed version of s
     '''
     toReturn = ''
+    toReturn = s[::-1]
     # add your code here
     return toReturn
 
@@ -143,6 +151,7 @@ def isIn(l,e):
     Returns true if element e is in list l
     '''
     toReturn = ''
+    toReturn = e in l 
     # add your code here
     return toReturn
 
@@ -151,6 +160,7 @@ def randomElement(l):
     Returns a random element of list l
     '''
     toReturn = ''
+    toReturn = random.choice(l)
     # add your code here
     return toReturn
 
@@ -159,6 +169,7 @@ def randomNumber():
     Returns a random number between 1000 and 9999
     '''
     toReturn = 0
+    toReturn = random.randrange(1000,9999)
     # add your code here
     return toReturn
 
@@ -167,6 +178,7 @@ def reverseList(l):
     Returns a list which is a mirror of l (each element is present in reverse order from l)
     '''
     toReturn = []
+    toReturn = l[::-1]
     # add your code here
     return toReturn
 
@@ -175,6 +187,7 @@ def shuffleList(l):
     Returns a list which has all the elements of l in a random order
     '''
     toReturn = []
+    toReturn = random.shuffle(l)
     # add your code here
     return toReturn
 
@@ -183,6 +196,7 @@ def listUntil(a):
     Returns a list contains numbers from 0 to a
     '''
     toReturn = []
+    toReturn = 0[:a]
     # add your code here
     return toReturn
 
