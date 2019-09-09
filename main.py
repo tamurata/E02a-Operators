@@ -187,7 +187,8 @@ def shuffleList(l):
     Returns a list which has all the elements of l in a random order
     '''
     toReturn = []
-    toReturn = random.shuffle(l)
+    random.shuffle(l)
+    toReturn = l
     # add your code here
     return toReturn
 
@@ -196,7 +197,8 @@ def listUntil(a):
     Returns a list contains numbers from 0 to a
     '''
     toReturn = []
-    toReturn = 0[:a]
+    for i in range(0,a):
+        toReturn.append(i)
     # add your code here
     return toReturn
 
